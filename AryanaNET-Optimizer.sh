@@ -5,14 +5,14 @@ CYAN='\e[36m'
 WHITE='\e[97m'
 YELLOW='\e[93m'
 if [[ "$(tput colors)" -ge 256 ]]; then
-  RED='\e[38;5;196m'      # Vivid red
-  ORANGE='\e[38;5;202m'   # Warm orange
-  PINK='\e[38;5;205m'     # Hot pink
+  RED='\e[38;5;196m'
+  ORANGE='\e[38;5;202m'
+  PINK='\e[38;5;205m'
   RESET='\e[0m'
 elif [[ "$(tput colors)" -ge 8 ]]; then
-  RED='\e[1;31m'          # Bold red
-  ORANGE='\e[1;33m'       # Fallback yellow-orange
-  PINK='\e[95m'           # Light magenta
+  RED='\e[1;31m'
+  ORANGE='\e[1;33m'
+  PINK='\e[95m'
   RESET='\e[0m'
 else
   RED=''; ORANGE=''; PINK=''; RESET=''
@@ -20,30 +20,13 @@ fi
 
 echo -e "${GREEN}======================================================${RESET}"
 
-echo -e "${RED}"
-echo "██████╗░██╗░██████╗░██╗████████╗░█████╗░██╗░░░░░ ██╗░░░██╗██████╗░░██████╗"
-echo "██╔══██╗██║██╔════╝░██║╚══██╔══╝██╔══██╗██║░░░░░ ██║░░░██║██╔══██╗██╔════╝"
-echo "██║░░██║██║██║░░██╗░██║░░░██║░░░███████║██║░░░░░ ╚██╗░██╔╝██████╔╝╚█████╗░"
-echo "██║░░██║██║██║░░╚██╗██║░░░██║░░░██╔══██║██║░░░░░ ░╚████╔╝░██╔═══╝░░╚═══██╗"
-echo "██████╔╝██║╚██████╔╝██║░░░██║░░░██║░░██║███████╗ ░░╚██╔╝░░██║░░░░░██████╔╝"
-echo "╚═════╝░╚═╝░╚═════╝░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚══════╝ ░░░╚═╝░░░╚═╝░░░░░╚═════╝░"
-echo
-echo "████████╗░█████╗░░█████╗░██╗░░░░░ ██████╗░░█████╗░██╗░░██╗"
-echo "╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░ ██╔══██╗██╔══██╗╚██╗██╔╝"
-echo "░░░██║░░░██║░░██║██║░░██║██║░░░░░ ██████╦╝██║░░██║░╚███╔╝░"
-echo "░░░██║░░░██║░░██║██║░░██║██║░░░░░ ██╔══██╗██║░░██║░██╔██╗░"
-echo "░░░██║░░░╚█████╔╝╚█████╔╝███████╗ ██████╦╝╚█████╔╝██╔╝╚██╗"
-echo "░░░╚═╝░░░░╚════╝░░╚════╝░╚══════╝ ╚═════╝░░╚════╝░╚═╝░░╚═╝"
-echo -e "${RESET}"
-
-echo -e "${WHITE}       DigitalVPS.ir VPS ToolBox${RESET}"
-echo -e "${WHITE}         ${CYAN}https://github.com/Digitalvps-Ir${RESET}"
-echo -e "${WHITE}     Developed by: ${CYAN}https://github.com/ParsaKSH${RESET}"
+echo -e "${WHITE}       AryanaNET Optimizer Tool${RESET}"
+echo -e "${WHITE}         ${CYAN}https://github.com/your-username/AryanaNET-Optimizer${RESET}"
+echo -e "${WHITE}     Developed by: ${CYAN}https://github.com/your-username${RESET}"
 
 echo -e "${GREEN}======================================================${RESET}"
 
-URL="https://digitalvps.org/scripts/toolbox_1.0.0.deb"
-
+URL="https://raw.githubusercontent.com/your-username/AryanaNET-Optimizer/main/toolbox_1.0.0.deb"
 
 echo -e "\033[36m📥 Downloading toolbox script...\033[0m"
 if wget "$URL"; then
